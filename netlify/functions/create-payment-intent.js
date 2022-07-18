@@ -1,6 +1,6 @@
 exports.handler = async function (event, context) {
-  // const stripe = require("stripe")('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
-  const stripe = require("stripe")('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');
+  const stripe = require("stripe")('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+  // const stripe = require("stripe")('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');
 
   try {
     const paymentIntent = await stripe.paymentIntents.create({
